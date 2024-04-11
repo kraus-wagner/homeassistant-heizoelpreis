@@ -1,19 +1,6 @@
 # homeassistant-heizoelpreis
 
-Add this to your configuration.yaml (for copy and paste use code view):
-
-rest:
-  - resource: https://www.heizoel24.de/DailyPriceXml.ashx?zipCode=XXXXX&litre=3000&unloadingpoints=1
-    headers:
-      user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"
-    scan_interval: 300
-    sensor:
-      - name: "heizoelpreis"
-        value_template: "{{ value_json['result']['deliveries']['delivery']['price'][0]['#text'] | regex_replace(find=',' , replace='.') | float }}"
-        unit_of_measurement: "EUR"
-        state_class: "measurement"
-        device_class: "monetary"
-        unique_id: "heizoelpreis"
+Add the code in heizoelpreis.yaml to your configuration.yaml.
 
 Replace XXXXX with your german zip code / Postleitzahl
 Replace 3000 with your amount of heating oil. Minimum is 500 i believe.
