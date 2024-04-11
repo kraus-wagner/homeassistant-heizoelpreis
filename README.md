@@ -1,6 +1,6 @@
 # homeassistant-heizoelpreis
 
-Add this to your configuration.yaml:
+Add this to your configuration.yaml (for copy and paste use code view):
 
 rest:
   - resource: https://www.heizoel24.de/DailyPriceXml.ashx?zipCode=XXXXX&litre=3000&unloadingpoints=1
