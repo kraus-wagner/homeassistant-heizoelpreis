@@ -6,3 +6,5 @@ Replace XXXXX with your german zip code / Postleitzahl.
 Replace 3000 with your amount of heating oil. Minimum is 500 i believe.  
 Scan interval is 300 seconds or 5 minutes. You can change it eg to 3600 for once an hour.  
 You can add a chart on your dashboard (i use apex-chart-card for long term), sensor is sensor.heizoelpreis. 
+
+[<img src='./homeassistant-heizoelpreis/blob/main/apexchart.png'>](https://github.com/kraus-wagner/homeassistant-heizoelpreis/blob/main/apexchart.png)
