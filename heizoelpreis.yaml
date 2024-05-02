@@ -7,6 +7,6 @@ rest:
       - name: "heizoelpreis"
         value_template: "{{ value_json['result']['deliveries']['delivery']['price'][0]['#text'] | regex_replace(find=',' , replace='.') | float }}"
         unit_of_measurement: "EUR"
-        state_class: "measurement"
+        state_class: "total"
         device_class: "monetary"
         unique_id: "heizoelpreis"
